@@ -64,4 +64,9 @@ if uploaded_file is not None:
         color_name = get_closest_color(R, G, B, colors_df)
 
         st.markdown(f"**Clicked Coordinates:** ({x}, {y})")
-        st.markdown(f"**Color Nam**
+        st.markdown(f"**Color Name:** {color_name}")
+        st.markdown(f"**RGB:** ({R}, {G}, {B})")
+        st.markdown(
+            f"<div style='background-color: rgb({R},{G},{B}); width: 150px; height: 50px;'></div>",
+            unsafe_allow_html=True
+        )

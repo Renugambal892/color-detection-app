@@ -1,4 +1,3 @@
-%%writefile app.py
 import streamlit as st
 import pandas as pd
 import cv2
@@ -61,3 +60,4 @@ if uploaded_file is not None:
             f"<div style='background-color: rgb({R},{G},{B}); width: 150px; height: 50px;'></div>",
             unsafe_allow_html=True
         )
+
